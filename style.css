@@ -90,3 +90,9 @@ main {
 .input-form-container button:hover {
     background-color: #026da7;
 }
+
+.short-link-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

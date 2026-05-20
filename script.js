@@ -1,5 +1,6 @@
 let userLongLink = document.querySelector("#userLongLink");
 let shortLinkResult = document.querySelector(".short-link-result");
+let shortLinkTitle = document.querySelector('.short-link-title')
 let longLinkForm = document.querySelector(".long-link-form");
 
 longLinkForm.addEventListener("submit", (event) => {
@@ -17,5 +18,6 @@ function randomCode() {
     codigo += letters[indiceAleatrorio];
   }
   shortLinkResult.href = `${userLongLink.value}`;
-  return (shortLinkResult.textContent = `https://www.localhost/${codigo}`);
+  shortLinkTitle.innerHTML = "<strong>Sua URL encurtada</strong>"
+  return (shortLinkResult.textContent = `https://www.localhost.com/${codigo}`);
 }
