@@ -4,12 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Encurtador de Links</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header><h1>Encurtador</h1></header>
-    <main>
-        <h2>Cole a URL que você quer encurtar</h2>
-        <input type="text" name="link" id="userLink">
-    </main>
+    <div class="encurtador-container">
+      <header><h1>Encurtador</h1></header>
+      <main>
+        <form class="long-link-form">
+          <label for="userLongLink"><strong>Cole seu link aqui</strong></label>
+          <div class="input-form-container">
+            <input
+              type="url"
+              name="longLink"
+              id="userLongLink"
+              placeholder="https://www.example.com.br/longLink"
+            />
+            <button type="submit">ENCURTAR</button>
+          </div>
+        </form>
+        <div class="short-link-container">
+          <p><strong>Sua URL encurtada</strong></p>
+          <p class="short-link-result">agurd</p>
+        </div>
+      </main>
+    </div>
   </body>
 </html>
